@@ -16,7 +16,7 @@ class RtTabsMain extends Component {
       tabSelected:'myPane1'
     };
 
-    
+
 
   };
 
@@ -46,7 +46,7 @@ class RtTabsMain extends Component {
   render(){
     const newProps = Object.assign({},this.props,this.state); //(es7 speread opeartor babel 2)//{...this.props, ...this.state}//
     if(this.isTabsPanesMisMatch){
-      return (<p>Mismatch in tabs and panes name</p>);
+      return (<p className="tab-pane-mismatch">Mismatch in tabs and panes name</p>);
     }else{
       return(
         <section className="tab-pane-main">

@@ -17,5 +17,9 @@ body{
   padding: 2%;
 }
 
+.tab-pane-mismatch{
+  color:red;
+}
+
 @import "tabs.scss";
 @import "pane.scss";
